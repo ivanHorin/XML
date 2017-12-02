@@ -12,14 +12,20 @@ public class jaxbWriter {
         customer.setFirstName("Ivan");
         customer.setLastName("Horin");
 
-        File file = new File("JAXB/customer.xml");
+        xmlJaxbWriter("JAXB/customer.xml", customer);
+    }
+
+    public static <T> void xmlJaxbWriter(String pathName, T objectToMarshall) throws JAXBException {
+
+        File file = new File(pathName);
         JAXBContext jaxbContext = JAXBContext.newInstance(Customer.class);
 
         Marshaller marshaller = jaxbContext.createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-        marshaller.marshal(customer, file);
+        marshaller.marshal(objectToMarshall, file);
 
         System.out.println("Xml file content:\n");
-        marshaller.marshal(customer, System.out);
+        marshaller.marshal(objectToMarshall, System.out);
+
     }
 }
