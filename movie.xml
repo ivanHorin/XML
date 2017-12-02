@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<movieCollection>
+
+    <movie>
+        <name>Contact</name>
+        <genre>Science fiction</genre>
+        <year>1997</year>
+    </movie>
+
+    <movie>
+        <name>Split</name>
+        <genre>Psychological thriller</genre>
+        <year>2017</year>
+    </movie>
+
+    <movie>
+        <name>Wonder woman</name>
+        <genre>Fantasy</genre>
+        <year>2017</year>
+    </movie>
+
+    <movie>
+        <name>Titanic</name>
+        <genre>Drama</genre>
+        <year>1997</year>
+    </movie>
+
+    <movie>
+        <name>Avatar</name>
+        <genre>Fantasy</genre>
+        <year>2009</year>
+    </movie>
+
+
+
+</movieCollection>
+
+
+
+
+
